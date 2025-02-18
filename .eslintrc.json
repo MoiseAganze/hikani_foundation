@@ -1,9 +1,7 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["next", "next/core-web-vitals"],
   "rules": {
-    "no-warning-comments": "off",
-    "import/no-extraneous-dependencies": "off",
-    "react/jsx-uses-react": "off",
-    "react/jsx-uses-vars": "off"
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-img-element": "off"
   }
 }
