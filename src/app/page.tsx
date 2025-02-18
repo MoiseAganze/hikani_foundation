@@ -12,8 +12,9 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "Hikani foundation",
+  description:
+    "Une organisation chrétienne de bienfaisance dédiée à l’amélioration des conditions de vie des plus vulnérables.",
   // other metadata
 };
 
