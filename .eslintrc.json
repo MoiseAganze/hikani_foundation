@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-warning-comments": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "off"
+  }
 }
