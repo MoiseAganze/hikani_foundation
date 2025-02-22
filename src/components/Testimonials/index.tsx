@@ -9,7 +9,7 @@ const testimonialData: Testimonial[] = [
     designation: "Fondatrice de la Hikani Fondation",
     content:
       "La Hikani Fondation est née de ma passion pour aider les plus vulnérables. Chaque jour, je suis inspirée par les sourires que nous apportons à ceux qui en ont le plus besoin.",
-    image: "/images/testimonials/fondatrice.png", // Remplacez par le chemin de l'image de la fondatrice
+    image: "/images/boss1.jpeg", // Remplacez par le chemin de l'image de la fondatrice
     star: 5,
   },
   {
@@ -18,7 +18,7 @@ const testimonialData: Testimonial[] = [
     designation: "Présidente AI de la Fondation",
     content:
       "Travailler avec la Hikani Fondation est une bénédiction. Chaque action que nous menons renforce notre engagement envers les plus démunis.",
-    image: "/images/testimonials/presidente.png", // Remplacez par le chemin de l'image de la présidente
+    image: "/images/team2.jpeg", // Remplacez par le chemin de l'image de la présidente
     star: 5,
   },
   {
@@ -27,7 +27,7 @@ const testimonialData: Testimonial[] = [
     designation: "Bénévole et Donateur",
     content:
       "Je soutiens la Hikani Fondation depuis des années. Leur transparence et leur dévouement envers les plus vulnérables sont vraiment inspirants.",
-    image: "/images/testimonials/donateur.png", // Remplacez par le chemin de l'image du donateur
+    image: "/images/orph3.jpeg", // Remplacez par le chemin de l'image du donateur
     star: 5,
   },
 ];

@@ -26,7 +26,7 @@ const Video = () => {
             >
               <div className="relative aspect-[77/40] items-center justify-center">
                 <Image
-                  src="/images/video/hikani-video-thumbnail.jpg" // Remplacez par le chemin de votre image
+                  src="/images/team2.jpeg" // Remplacez par le chemin de votre image
                   alt="Image de la vidéo de la Hikani Fondation"
                   fill
                 />

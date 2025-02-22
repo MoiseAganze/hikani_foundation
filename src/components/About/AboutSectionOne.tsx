@@ -52,13 +52,13 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/hikani-about-light.jpg" // Remplacez par le chemin de votre image claire
+                  src="/images/visite2.jpeg" // Remplacez par le chemin de votre image claire
                   alt="À propos de la Hikani Fondation"
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
                 <Image
-                  src="/images/about/hikani-about-dark.jpg" // Remplacez par le chemin de votre image sombre
+                  src="/images/visite2.jpeg" // Remplacez par le chemin de votre image sombre
                   alt="À propos de la Hikani Fondation"
                   fill
                   className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"

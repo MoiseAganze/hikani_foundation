@@ -11,13 +11,13 @@ const AboutSectionTwo = () => {
               data-wow-delay=".15s"
             >
               <Image
-                src="/images/about/hikani-impact-light.jpg" // Remplacez par le chemin de votre image claire
+                src="/images/affiche_vieillard.jpeg" // Remplacez par le chemin de votre image claire
                 alt="Impact de la Hikani Fondation"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
               />
               <Image
-                src="/images/about/hikani-impact-dark.jpg" // Remplacez par le chemin de votre image sombre
+                src="/images/affiche_vieillard.jpeg" // Remplacez par le chemin de votre image sombre
                 alt="Impact de la Hikani Fondation"
                 fill
                 className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
