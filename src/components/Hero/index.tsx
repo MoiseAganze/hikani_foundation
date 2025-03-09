@@ -22,20 +22,29 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="#about"
+                    href="/about"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     Découvrez notre mission
                   </Link>
                   <Link
-                    href="#contact"
+                    href="/contact"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Rejoignez-nous
                   </Link>
                 </div>
               </div>
-              <img src="/images/logo/logo.png" alt="logo" className="w-full" />
+              <img
+                src="/images/logo/logo_white.png"
+                alt="logo"
+                className="hidden w-full dark:block"
+              />
+              <img
+                src="/images/logo/logo_black.png"
+                alt="logo"
+                className="w-full dark:hidden"
+              />
             </div>
           </div>
         </div>

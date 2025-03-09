@@ -25,9 +25,9 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
         <p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
           “{content}
         </p>
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
-            <Image src={image} alt={name} fill />
+            <img src="/images/user.png" alt={name} className="" />
           </div>
           <div className="w-full">
             <h3 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
@@ -35,7 +35,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
             </h3>
             <p className="text-sm text-body-color">{designation}</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

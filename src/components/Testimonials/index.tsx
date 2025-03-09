@@ -23,11 +23,11 @@ const testimonialData: Testimonial[] = [
   },
   {
     id: 3,
-    name: "Jean Dupont",
-    designation: "Bénévole et Donateur",
+    name: "Gaëlle Nsala",
+    designation: "Vice Présidente",
     content:
       "Je soutiens la Hikani Fondation depuis des années. Leur transparence et leur dévouement envers les plus vulnérables sont vraiment inspirants.",
-    image: "/images/orph3.jpeg", // Remplacez par le chemin de l'image du donateur
+    image: "/images/gaelle.jpeg", // Remplacez par le chemin de l'image du donateur
     star: 5,
   },
 ];

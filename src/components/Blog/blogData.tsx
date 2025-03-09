@@ -36,9 +36,9 @@ const blogData: Blog[] = [
       "Nous avons lancé un programme de formation pour aider les veuves à acquérir des compétences professionnelles et à retrouver leur autonomie.",
     image: "/images/orph4.jpeg", // Remplacez par le chemin de votre image
     author: {
-      name: "Jean Dupont",
-      image: "/images/team1.jpeg", // Remplacez par le chemin de l'image de l'auteur
-      designation: "Bénévole et Donateur",
+      name: "Gaëlle Nsala",
+      image: "/images/gaelle.jpeg", // Remplacez par le chemin de l'image de l'auteur
+      designation: "Vice Présidente",
     },
     tags: ["Autonomie"],
     publishDate: "2024",
