@@ -2,7 +2,7 @@ import React from "react";
 
 const SingleBoss = ({ name, role, image }) => {
   return (
-    <div className="w-96 overflow-hidden rounded-lg bg-gray-100 shadow-sm dark:bg-gray-dark">
+    <div className="max-w-96 overflow-hidden rounded-lg bg-gray-100 shadow-sm dark:bg-gray-dark">
       <figure className="h-48 w-full overflow-hidden">
         <img src={image} alt="boss" className="h-full w-full object-cover" />
       </figure>
