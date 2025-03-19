@@ -3,6 +3,7 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import ReseauCard from "./ReseauCard";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -16,8 +17,24 @@ const Pricing = () => {
           center
           width="665px"
         />
-
-        <div className="w-full">
+        <div className="grid grid-cols-3 gap-3 lg:grid-cols-3">
+          <ReseauCard
+            num={"0983987921"}
+            src={"/images/airtel.png"}
+            title={"airtel money"}
+          />
+          <ReseauCard
+            num={"0826206688"}
+            src={"/images/mpesa.png"}
+            title={"m-pesa"}
+          />
+          <ReseauCard
+            num={"0842924764"}
+            src={"/images/orange.png"}
+            title={"orange money"}
+          />
+        </div>
+        {/* <div className="w-full">
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
             <span
               onClick={() => setIsMonthly(true)}
@@ -55,9 +72,9 @@ const Pricing = () => {
               Don Mensuel
             </span>
           </div>
-        </div>
+        </div> */}
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Petit Don"
             price={isMonthly ? "10" : "5"}
@@ -94,7 +111,7 @@ const Pricing = () => {
             <OfferList text="Projets communautaires" status="active" />
             <OfferList text="Impact à long terme" status="active" />
           </PricingBox>
-        </div>
+        </div> */}
       </div>
 
       <div className="absolute bottom-0 left-0 z-[-1]">
