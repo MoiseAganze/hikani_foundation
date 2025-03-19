@@ -11,7 +11,7 @@ const ReseauCard = ({ src, num, title }) => {
         />
       </figure>
       <div className="h-10 p-3">
-        <h2 className="flex items-center justify-between text-sm font-bold text-gray-500">
+        <h2 className="flex items-center justify-between text-start text-xs font-bold text-gray-500 md:text-sm">
           {num}
           {/* <span className="rounded-full bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-950 dark:text-blue-300">
             {title}
