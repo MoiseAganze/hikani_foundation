@@ -77,7 +77,7 @@ export async function POST(request: Request) {
            
           </div>
           <div class="footer">
-            <p>Cet email a été envoyé par ${name} depuis <a href="https://hikani-foundation.vercel.app/">VotreSite</a>.</p>
+            <p>Cet email a été envoyé par ${name} depuis <a href="https://hikani-foundation.vercel.app/">Hikani Foundation</a>.</p>
             
           </div>
         </div>

@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import NewsLatterBox from "./NewsLatterBox";
 import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
@@ -8,37 +7,71 @@ const Contact = () => {
   const [to, setTo] = useState("");
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
+
+  // Fonction pour valider l'email
+  const validateEmail = (email: string) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    await fetch("/api/sendEmail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        to,
-        subject: "Message à Hikani foundation",
-        text,
-        name,
-      }),
-    })
-      .then(() => {
-        toast.success(
-          "votre message a été envoyé avec succès à Hikani Foundation ",
-          { duration: 6000 },
-        );
-      })
-      .catch((err) => {
-        console.log(err);
-        toast.error("une erreur est survenue lors de l'envoie de la video", {
-          duration: 5000,
-        });
-      })
-      .finally(() => setLoading(false));
 
-    //console.log(result);
+    // Vérifications des champs
+    if (!name.trim()) {
+      toast.error("Veuillez entrer votre nom.", { duration: 5000 });
+      return;
+    }
+    if (!to.trim()) {
+      toast.error("Veuillez entrer votre email.", { duration: 5000 });
+      return;
+    }
+    if (!validateEmail(to)) {
+      toast.error("Veuillez entrer un email valide.", { duration: 5000 });
+      return;
+    }
+    if (!text.trim()) {
+      toast.error("Veuillez entrer votre message.", { duration: 5000 });
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          to,
+          subject: "Message à Hikani foundation",
+          text,
+          name,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Erreur lors de l'envoi du message.");
+      }
+
+      toast.success(
+        "Votre message a été envoyé avec succès à Hikani Foundation.",
+        { duration: 6000 },
+      );
+      setTo("");
+      setText("");
+      setName("");
+    } catch (err) {
+      console.error(err);
+      toast.error("Une erreur est survenue lors de l'envoi du message.", {
+        duration: 5000,
+      });
+    } finally {
+      setLoading(false);
+    }
   };
+
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -117,16 +150,13 @@ const Contact = () => {
                       onClick={handleSubmit}
                       className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
                     >
-                      {loading ? "envoie..." : "Envoyer"}
+                      {loading ? "Envoi en cours..." : "Envoyer"}
                     </button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
-          {/* <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <NewsLatterBox />
-          </div> */}
         </div>
       </div>
       <Toaster position="top-center" reverseOrder={false} />
