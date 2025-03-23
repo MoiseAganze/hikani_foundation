@@ -86,8 +86,8 @@ export async function POST(request: Request) {
     `;
 
     await sgMail.send({
-      //to: "Fondationhikani@gmail.com", // admin
-      to: "aganzedev@gmail.com", // admin
+      to: "Fondationhikani@gmail.com", // admin
+      //to: "aganzedev@gmail.com", // admin
       subject,
       html: htmlContent,
       replyTo: to,
