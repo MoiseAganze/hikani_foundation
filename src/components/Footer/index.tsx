@@ -37,7 +37,7 @@ const Footer = () => {
                     <a
                       href="https://www.facebook.com/profile.php?id=61557878957315&mibextid=wwXIfr&mibextid=wwXIfr"
                       aria-label="social-link"
-                      // target="_blank"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
